@@ -1,3 +1,15 @@
+/**
+ * Download Manager Plugin for Wolf CMS <http://www.tbeckett.net/articles/plugins/counter.xhtml>
+ *
+ * Since BD is no longer available, I have adopted and modified the files and will be re-hosting on http://www.tbeckett.net
+ *
+ * Copyright (C) 2007 - 2009 George Bebliuc <http://frog.bebliuc.ro -> BebliucDesign>
+ * Copyright (C) 2008 - 2011 Tyler Beckett <tyler@tbeckett.net>
+ * 
+ * Dual licensed under the MIT (/license/mit-license.txt)
+ * and GPL (/license/gpl-license.txt) licenses.
+ */
+
 Hello everyone. Today I'm releasing my latest plugin, the Download Manager. Why I say Manager instead of Counter? Because I've almost fully rewrite the code, many modifications were made, new features were added. So I think it deserves the name, Manager. I tried to make this plugin available quicker, but I encountered some little problems, which in the end became big ones. One of them was the possibility to keep the current downloads from the older version while upgrading, because I've modified the structure of the MySQL tables. You'll see that it's a bit rusty. There are some new features like :
 
    Better administration interface, more user friendly.

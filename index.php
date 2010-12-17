@@ -1,6 +1,16 @@
 <?php
-//  http://frog.bebliuc.ro -> BebliucDesign
-//  Since BD is no longer available, I have adopted and modified the files and will be re-hosting on http://www.tbeckett.net
+
+/**
+ * Download Manager Plugin for Wolf CMS <http://www.tbeckett.net/articles/plugins/counter.xhtml>
+ *
+ * Since BD is no longer available, I have adopted and modified the files and will be re-hosting on http://www.tbeckett.net
+ *
+ * Copyright (C) 2007 - 2009 George Bebliuc <http://frog.bebliuc.ro -> BebliucDesign>
+ * Copyright (C) 2008 - 2011 Tyler Beckett <tyler@tbeckett.net>
+ * 
+ * Dual licensed under the MIT (/license/mit-license.txt)
+ * and GPL (/license/gpl-license.txt) licenses.
+ */
 
 Plugin::setInfos(array(
     'id'          => 'counter',
