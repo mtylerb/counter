@@ -3,7 +3,7 @@
  *
  * Since BD is no longer available, I have adopted and modified the files and will be re-hosting on http://www.tbeckett.net
  *
- * Copyright (C) 2007 - 2009 George Bebliuc <http://frog.bebliuc.ro -> BebliucDesign>
+ * Copyright (C) 2007 - 2009 Bebliuc George Cristian <bebliuc.george@gmail.com>
  * Copyright (C) 2008 - 2011 Tyler Beckett <tyler@tbeckett.net>
  * 
  * Dual licensed under the MIT (/license/mit-license.txt)
