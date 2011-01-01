@@ -45,10 +45,10 @@ For updating from a older version of Bd Download Counter or Bd Download Manager 
 10. IN THE ACTION FIELD INSERT "INSTALL" , WITHOUT BRACKETS.
 11. HIT GO .
 12. THIS MESSAGE SHOULD APPEAR :
-    > Download Manager has been installed.
-    > download has been created.
-    > download_template has been created.
-    > Happy downloading.
+    * > Download Manager has been installed.
+    * > download has been created.
+    * > download_template has been created.
+    * > Happy downloading.
 13. CLICK ON IMPORT/EXPORT/INSTALL BUTTON FROM THE SIDEBAR.
 14. IN THE ACTION FIELD INSERT "IMPORT", WITHOUT BRACKETS.
 15. PASTE THE EXPORTED SQL SYNTAX FROM STEP 8 .
