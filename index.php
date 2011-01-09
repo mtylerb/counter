@@ -26,7 +26,8 @@ Plugin::setInfos(array(
 
 Plugin::addController('counter', 'Counter');
 
-error_reporting(E_ALL^E_NOTICE);
+// Setting error display depending on debug mode or not
+error_reporting((DEBUG ? (E_ALL | E_STRICT) : 0));
 
 class bdcounter {
 	
