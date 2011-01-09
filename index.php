@@ -5,7 +5,7 @@
  *
  * Since BD is no longer available, I have adopted and modified the files and will be re-hosting on http://www.tbeckett.net
  *
- * Copyright (C) 2007 - 2009 Bebliuc George Cristian <bebliuc.george@gmail.com>
+ * Copyright (C) 2007 - 2009 George Bebliuc <http://frog.bebliuc.ro -> BebliucDesign>
  * Copyright (C) 2008 - 2011 Tyler Beckett <tyler@tbeckett.net>
  * 
  * Dual licensed under the MIT (/license/mit-license.txt)
@@ -16,18 +16,17 @@ Plugin::setInfos(array(
     'id'          => 'counter',
     'title'       => 'Download Manager', 
     'description' => 'Download and Link Manager.', 
-    'version'     => '1.0.3', 
+    'version'     => '1.0.4', 
     'license'     => 'AGPL',
     'author'      => 'BebliucDesign and Tyler Beckett',
     'website'     => 'http://www.tbeckett.net',
     'update_url'  => 'http://www.tbeckett.net/wpv.xhtml',
-    'require_wolf_version' => '0.6.0')
+    'require_wolf_version' => '0.7.3')
 );
 
 Plugin::addController('counter', 'Counter');
 
-// Setting error display depending on debug mode or not
-error_reporting((DEBUG ? (E_ALL | E_STRICT) : 0));
+error_reporting(E_ALL^E_NOTICE);
 
 class bdcounter {
 	
@@ -81,9 +80,13 @@ class bdcounter {
 	}
 	
 	function url($url_class = "download_url", $_url_id = "download_url") {
-		if($_POST['linkpassword'] == $this->password ) {
-		print URL_PUBLIC.'wolf/plugins/counter/sub/download.php?id='.$this->id;
-		
+		if (!empty($_POST['linkpassword']))
+		{
+			if($_POST['linkpassword'] == $this->password ) {
+			print URL_PUBLIC.'wolf/plugins/counter/sub/download.php?id='.$this->id;
+			}
+		} else {
+			print URL_PUBLIC.'wolf/plugins/counter/sub/download.php?id='.$this->id;
 		}
 	}
 	
